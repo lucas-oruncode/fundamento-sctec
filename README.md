@@ -1,2 +1,39 @@
 # Fundamentos SCTEC
-Exercícios e desafios feitos no curso de fundamentos .net
+
+Exercícios e desafios desenvolvidos durante o curso de fundamentos .NET.
+
+## Estrutura do projeto
+
+O repositório está organizado em pastas separadas, com um projeto por exercício.
+
+## Exercícios
+
+| Projeto | Tema | Apontamento |
+| --- | --- | --- |
+| `exercicio01` | Número positivo | Lê um número inteiro e informa se ele é positivo ou não. |
+| `exercicio02` | Múltiplo de 5 | Verifica se o valor informado é múltiplo de 5. |
+| `exercicio03` | Faixa etária | Classifica a idade em menor de idade, maior de idade ou idoso. |
+| `exercicio04` | Desconto em compra | Aplica regras de desconto conforme o valor da compra. |
+| `exercicio05` | Análise de crédito | Avalia renda, idade e negativação para aprovação de crédito. |
+| `exercicio06` | Cálculo de frete | Calcula frete com base em distância, peso e tipo de cliente. |
+| `exercicio07` | Tabuada do 2 | Exibe a tabuada do 2 usando `for` e `while`. |
+| `exercicio08` | Validador de entrada | Repete a leitura até receber um número entre 1 e 10. |
+| `exercicio09` | Fatorial | Calcula o fatorial com `while`, `do/while` e `for`. |
+| `exercicio10` | Menu interativo | Reúne tabuada, validador e fatorial em um menu de console. |
+
+## Desafios
+
+| Projeto | Tema | Status |
+| --- | --- | --- |
+| `Desafio01` | Simulador de login com tentativas limitadas | Contém apenas o enunciado no `Program.cs`. |
+| `Desafio02` | Simulador de caixa eletrônico | Contém apenas o enunciado no `Program.cs`. |
+
+## Como executar
+
+Execute qualquer exercício individualmente com:
+
+```bash
+dotnet run --project exercicio01
+```
+
+Troque `exercicio01` pelo diretório desejado, por exemplo `exercicio09` ou `Desafio02`.
