@@ -20,6 +20,9 @@ O repositório está organizado em pastas separadas, com um projeto por exercíc
 | `exercicio08` | Validador de entrada | Repete a leitura até receber um número entre 1 e 10. |
 | `exercicio09` | Fatorial | Calcula o fatorial com `while`, `do/while` e `for`. |
 | `exercicio10` | Menu interativo | Reúne tabuada, validador e fatorial em um menu de console. |
+| `exercicio11` | Método de subtração | Cria um método `Subtrair` que retorna a subtração de dois números. |
+| `exercicio12` | Método de idade | Cria um método `MostrarIdade` que calcula a idade a partir do ano de nascimento. |
+| `exercicio13` | Número par ou ímpar | Cria um método `VerificarPar` que retorna se um número é par. |
 
 ## Desafios
 
