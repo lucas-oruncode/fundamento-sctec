@@ -23,10 +23,10 @@ O repositório está organizado em pastas separadas, com um projeto por exercíc
 
 ## Desafios
 
-| Projeto | Tema | Status |
+| Projeto | Tema | Apontamento |
 | --- | --- | --- |
-| `Desafio01` | Simulador de login com tentativas limitadas | Contém apenas o enunciado no `Program.cs`. |
-| `Desafio02` | Simulador de caixa eletrônico | Contém apenas o enunciado no `Program.cs`. |
+| `Desafio01` | Simulador de login com tentativas limitadas | Solicita usuário e senha, controla tentativas e bloqueia o acesso após o limite. |
+| `Desafio02` | Simulador de caixa eletrônico | Permite depositar, sacar, consultar saldo e sair sem deixar o saldo negativo. |
 
 ## Como executar
 
