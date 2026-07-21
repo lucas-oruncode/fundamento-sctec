@@ -23,6 +23,8 @@ O repositório está organizado em pastas separadas, com um projeto por exercíc
 | `exercicio11` | Método de subtração | Cria um método `Subtrair` que retorna a subtração de dois números. |
 | `exercicio12` | Método de idade | Cria um método `MostrarIdade` que calcula a idade a partir do ano de nascimento. |
 | `exercicio13` | Número par ou ímpar | Cria um método `VerificarPar` que retorna se um número é par. |
+| `exercicio14` | Array de strings | Lê o tamanho, preenche e exibe um array de strings. |
+| `exercicio15` | Média de notas | Armazena notas informadas pelo usuário em um array e calcula a média. |
 
 ## Desafios
 
