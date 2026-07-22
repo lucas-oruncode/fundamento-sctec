@@ -25,6 +25,7 @@ O repositório está organizado em pastas separadas, com um projeto por exercíc
 | `exercicio13` | Número par ou ímpar | Cria um método `VerificarPar` que retorna se um número é par. |
 | `exercicio14` | Array de strings | Lê o tamanho, preenche e exibe um array de strings. |
 | `exercicio15` | Média de notas | Armazena notas informadas pelo usuário em um array e calcula a média. |
+| `exercicio16` | Lista de compras | Menu interativo para adicionar e listar itens usando `List<string>`. |
 
 ## Desafios
 
