@@ -66,7 +66,7 @@ void Deposit()
     Console.WriteLine("1. DEPOSITO \nInforme o valor que deseja depositar:");
     bool isValid = decimal.TryParse(Console.ReadLine(), out decimal deposit);
 
-    if (isValid)
+    if (isValid && deposit > 0)
     {
         totalValue += deposit;
         extract.Add($"Depósito: + {deposit:C2}");
@@ -84,7 +84,7 @@ void Withdraw()
     Console.WriteLine("2. SACAR \nInforme o valor que deseja sacar");
     bool isValid = decimal.TryParse(Console.ReadLine(), out decimal withdraw);
 
-    if (isValid)
+    if (isValid && withdraw > 0)
     {
         if (totalValue >= withdraw)
         {
