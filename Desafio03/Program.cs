@@ -8,79 +8,24 @@ var extract = new List<string>();
 
 do
 {
-    Console.WriteLine("==================================");
-    Console.WriteLine("Bem vindo ao Caixa Eletrônico \nInforme a opção desejada:");
-    Console.WriteLine("1. Depositar \n2. Sacar \n3. Ver saldo \n4. Extrato \n5. Sair");
-    bool isValid = int.TryParse(Console.ReadLine(), out menuOption);
-
-    if (!isValid)
-    {
-        Console.WriteLine("Opção inválida");
-    }
+    ShowMenu();
 
     switch (menuOption)
     {
-        case 1:
-
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("1. DEPOSITO \nInforme o valor que deseja depositar:");
-            isValid = decimal.TryParse(Console.ReadLine(), out decimal deposit);
-
-            if (isValid)
-            {
-                totalValue += deposit;
-                extract.Add($"Depósito: + {deposit:C2}");
-                Console.WriteLine($"Você depositou {deposit:C2}");
-            } 
-            else
-            {
-                Console.WriteLine("Valor inválido.");
-            }
-
+        case 1:            
+            Deposit();
             break;
 
         case 2:
-
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("2. SACAR \nInforme o valor que deseja sacar");
-            isValid = decimal.TryParse(Console.ReadLine(), out decimal withdraw);
-
-            if (isValid)
-            {
-                if (totalValue >= withdraw)
-                {
-                    totalValue -= withdraw;
-                    extract.Add($"Saque: - {withdraw:C2}");
-                    Console.WriteLine($"Você sacou {withdraw:C2}");
-                }
-                else
-                {
-                    Console.WriteLine("Saldo insuficiente.");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Valor inválido.");
-            }
-
+            Withdraw();
             break;
 
         case 3:
-
-            Console.WriteLine("-----------------------");
-            Console.WriteLine($"3. SALDO DISPONIVEL \nSaldo: {totalValue:C2}");
-
+            ShowBalance();
             break;
         
         case 4:
-
-            Console.WriteLine("-----------------------");
-            Console.WriteLine("4. EXTRATO");
-            foreach (var item in extract)
-            {
-                Console.WriteLine(item);
-            }
-
+            ShowExtract();
             break;
         
         case 5:
@@ -100,3 +45,76 @@ do
 
 
 } while(menuOption != 5);
+
+
+void ShowMenu()
+{
+    Console.WriteLine("\n==================================");
+    Console.WriteLine("Bem vindo ao Caixa Eletrônico \nInforme a opção desejada:");
+    Console.WriteLine("1. Depositar \n2. Sacar \n3. Ver saldo \n4. Extrato \n5. Sair");
+    bool isValid = int.TryParse(Console.ReadLine(), out menuOption);
+
+    if (!isValid)
+    {
+        Console.WriteLine("Opção inválida");
+    }
+}
+
+void Deposit()
+{
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("1. DEPOSITO \nInforme o valor que deseja depositar:");
+    bool isValid = decimal.TryParse(Console.ReadLine(), out decimal deposit);
+
+    if (isValid)
+    {
+        totalValue += deposit;
+        extract.Add($"Depósito: + {deposit:C2}");
+        Console.WriteLine($"Você depositou {deposit:C2}");
+    } 
+    else
+    {
+        Console.WriteLine("Valor inválido.");
+    }
+}
+
+void Withdraw()
+{
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("2. SACAR \nInforme o valor que deseja sacar");
+    bool isValid = decimal.TryParse(Console.ReadLine(), out decimal withdraw);
+
+    if (isValid)
+    {
+        if (totalValue >= withdraw)
+        {
+            totalValue -= withdraw;
+            extract.Add($"Saque: - {withdraw:C2}");
+            Console.WriteLine($"Você sacou {withdraw:C2}");
+        }
+        else
+        {
+            Console.WriteLine("Saldo insuficiente.");
+        }
+    }
+    else
+    {
+        Console.WriteLine("Valor inválido.");
+    }
+}
+
+void ShowBalance()
+{
+    Console.WriteLine("-----------------------");
+    Console.WriteLine($"3. SALDO DISPONIVEL \nSaldo: {totalValue:C2}");
+}
+
+void ShowExtract()
+{
+    Console.WriteLine("-----------------------");
+    Console.WriteLine("4. EXTRATO");
+    foreach (var item in extract)
+    {
+        Console.WriteLine(item);
+    }
+}
