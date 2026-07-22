@@ -33,6 +33,7 @@ O repositório está organizado em pastas separadas, com um projeto por exercíc
 | --- | --- | --- |
 | `Desafio01` | Simulador de login com tentativas limitadas | Solicita usuário e senha, controla tentativas e bloqueia o acesso após o limite. |
 | `Desafio02` | Simulador de caixa eletrônico | Permite depositar, sacar, consultar saldo e sair sem deixar o saldo negativo. |
+| `Desafio03` | Simulador de caixa eletrônico (aprimorado) | Upgrade do Desafio02 com validação de opções, tratamento de erros e extrato de transações. |
 
 ## Como executar
 
